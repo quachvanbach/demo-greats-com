@@ -1,0 +1,14 @@
+.hero-shop-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black; /* Màu nền muốn chuyển đổi */
+    transition: width 0.3s ease-out; /* Sử dụng transition trên thuộc tính width */
+}
+
+.hero-shop-button:hover::before {
+    width: 0; /* Thu width của before về 0 khi hover */
+}

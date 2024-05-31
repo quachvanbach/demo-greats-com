@@ -8,11 +8,41 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "desktop-bg": "@/public/assets/images/hero-banner.jpg",
+        "mobile-bg": "@/public/assets/images/mobile-hero-banner.jpg",
+      },
+      fontFamily: {
+        'playfair-display': ['"Playfair Display"', 'serif'],
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.hero-shop-button': {
+          height: '45px',
+          minWidth: '120px',
+          maxWidth: '230px',
+          width: '100%',
+          display: 'inline-flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          position: 'relative',
+          backgroundColor: 'transparent',
+          paddingLeft: '50px',
+          paddingRight: '50px',
+          paddingTop: '12px',
+          paddingBottom: '12px',
+          borderRadius:'10px',
+          textTransform: 'uppercase',
+          color: 'white',
+          overflow: 'hidden',
+        },
+        '.hero-shop-button:hover': {
+          border: 'solid 2px #fff',
+        }
+      }
+      addUtilities(newUtilities, ['responsive', 'hover'])
+    }
+  ]
 };
