@@ -3,6 +3,8 @@ import "./globals.css";
 import './custom.css';
 import Footer from "@/app/components/footer/footer";
 import Header from "@/app/components/header/header";
+import "swiper/css";
+import "swiper/css/pagination";
 
 const inter = Inter({subsets: ["latin"]});
 
@@ -15,9 +17,9 @@ export default function RootLayout({children}) {
     return (
         <html lang="en">
         <body className={inter.className}>
-        <Header/>
+        {/*<Header/>*/}
         {children}
-        <Footer/>
+        {/*<Footer/>*/}
         </body>
         </html>
     );
