@@ -6,7 +6,7 @@ export default function HeroBanner() {
     return (
         <>
             <div>
-                <div className='h-[90vh] min-h-[600px] relative block'>
+                <div className='h-[90vh] lg:h-[80vh] min-h-[600px] relative block'>
                     <section>
                         <picture className='absolute top-0 left-0 w-full h-full'>
                             <source srcSet={mobileHero.src} type='image/webp' media='(max-width: 767px)'/>
@@ -18,9 +18,9 @@ export default function HeroBanner() {
                                 <div className='text-center text-white'>
                                     <h1 className='font-playfair-display text-[53px]'>Hello, Summer</h1>
                                     <p>Brighten your wardrobe with the season's new essentials.</p>
-                                    <div className='mt-[20px] flex justify-center'>
+                                    <div className='mt-[20px] flex sm:flex-col justify-center items-center'>
                                         <a href="" className='hero-shop-button'><span className='font-[500] z-10'>Shop men</span></a>
-                                        <a href="" className='hero-shop-button ml-[15px]'><span className='font-[500] z-10'>Shop women</span></a>
+                                        <a href="" className='hero-shop-button sm:ml-0 sm:mt-[15px] ml-[15px]'><span className='font-[500] z-10'>Shop women</span></a>
                                     </div>
                                 </div>
                             </div>

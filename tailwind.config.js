@@ -15,6 +15,10 @@ module.exports = {
         'playfair-display': ['"Playfair Display"', 'serif'],
       },
     },
+      screens: {
+          'lg': {'max': '1024px'},
+          'sm': {'max': '768px'},
+      }
   },
   plugins: [
     function ({ addUtilities }) {
