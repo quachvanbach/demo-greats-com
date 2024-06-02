@@ -48,3 +48,24 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+/*Hero banner css*/
+.hero-shop-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transition: width 0.3s ease-out;
+}
+
+.hero-shop-button:hover::before {
+    width: 0;
+}
+
+/*Featured collections css*/
+.tab-content.active {
+    display: block;
+}
