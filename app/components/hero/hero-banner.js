@@ -1,6 +1,5 @@
 import desktopHero from '@/public/assets/images/hero-banner.jpg';
 import mobileHero from '@/public/assets/images/mobile-hero-banner.jpg';
-import './hero.css'
 
 export default function HeroBanner() {
     return (

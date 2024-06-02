@@ -1,7 +1,6 @@
 'use client'
 
 import {collectionForMen, collectionForWomen} from "@/data/collectiondata";
-import './collections.css';
 import React, {useState} from "react";
 import {Swiper, SwiperSlide} from "swiper/react";
 
@@ -57,7 +56,8 @@ export default function Collections() {
                                 >
                                     {
                                         collectionForMen.map(({id, image, title}) => (
-                                            <SwiperSlide key={id} className='basis-1/4 md:basis-1/3 sm:basis-[40%] xs:basis-3/4'>
+                                            <SwiperSlide key={id}
+                                                         className='basis-1/4 md:basis-1/3 sm:basis-[40%] xs:basis-3/4'>
                                                 <div className='collection-item mx-[10px]'>
                                                     <a href="" className='collection-item__link'>
                                                         <img src={image} alt="" className='collection-item__image'/>
